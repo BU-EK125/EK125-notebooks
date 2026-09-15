@@ -3,12 +3,17 @@ root: intro
 chapters:
   - file: class/Class1
   - file: class/Class2
+  - file: gpp/Class_2_GPP
   - file: class/Class3
+  - file: gpp/Class_3_GPP
   - file: class/Class4
   - file: gpp/Class_4_GPP
   - file: class/Class5
+  - file: gpp/Class_5_GPP
   - file: class/Class6
+  - file: gpp/Class_6_GPP
   - file: class/Class7
+  - file: gpp/Class_7_GPP
   - file: class/Class9
   - file: class/Class10
   - file: class/Class11
