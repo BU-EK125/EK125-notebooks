@@ -33,3 +33,7 @@ __pycache__/
 /Projects/
 /Class15/
 /Experiments/
+
+# Figures saved by Class15.ipynb's plotting demos
+/myPlot.png
+/experimentAnalysis.png
