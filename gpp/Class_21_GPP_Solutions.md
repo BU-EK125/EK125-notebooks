@@ -1,6 +1,8 @@
 # Class 21 GPP Solutions: User Functions and Modular Programming in MATLAB
 
-## Problem 1: Temperature Converter
+## Part 1: Basic Function Writing
+
+### Problem 1: Temperature Converter
 
 ```matlab
 function tempC = fahrenheitToCelsius(tempF)
@@ -17,7 +19,7 @@ function tempC = fahrenheitToCelsius(tempF)
 end
 ```
 
-## Problem 2: Volume Calculator
+### Problem 2: Volume Calculator
 
 ```matlab
 function volume = cylinderVolume(radius, height)
@@ -45,7 +47,9 @@ function volume = cylinderVolume(radius, height)
 end
 ```
 
-## Problem 3: Circle Properties
+## Part 2: Multiple Outputs
+
+### Problem 3: Circle Properties
 
 ```matlab
 function [area, circumference] = circleProperties(radius)
@@ -68,7 +72,7 @@ function [area, circumference] = circleProperties(radius)
 end
 ```
 
-## Problem 4: Vector Statistics
+### Problem 4: Vector Statistics
 
 ```matlab
 function [minVal, maxVal, rangeVal] = vectorStats(data)
@@ -89,7 +93,9 @@ function [minVal, maxVal, rangeVal] = vectorStats(data)
 end
 ```
 
-## Problem 5: Grade Reporter
+## Part 3: Functions Without Outputs
+
+### Problem 5: Grade Reporter
 
 ```matlab
 function printGradeReport(studentName, examScore, homeworkScore)
@@ -113,7 +119,9 @@ function printGradeReport(studentName, examScore, homeworkScore)
 end
 ```
 
-## Problem 6: BMI Calculator with Classification
+## Part 4: Modular Design with Local Functions
+
+### Problem 6: BMI Calculator with Classification
 
 **Note:** the source solution key stops at the primary function and leaves the
 two local helper functions as stubs (`% Local helper function`). The bodies
@@ -165,7 +173,9 @@ function category = classifyBMI(bmi)
 end
 ```
 
-## Problem 7: Quadratic Solver (Challenge)
+## Challenge Problem (Extra - if time permits)
+
+### Problem 7: Quadratic Solver (Challenge)
 
 ```matlab
 function [x1, x2] = solveQuadratic(a, b, c)

@@ -6,7 +6,7 @@ Create a new folder for today's work. Good modular programming practice requires
 
 ## Part 1: Basic Function Writing
 
-## Problem 1: Temperature Converter
+### Problem 1: Temperature Converter
 
 Write a function called fahrenheitToCelsius that converts a temperature from Fahrenheit to Celsius using the formula: C = (F - 32) × 5/9
 
