@@ -15,6 +15,7 @@ chapters:
       - file: gpp/Class_3_GPP_Solutions
   - file: class/Class4
     sections:
+      - file: class/Class4_Lecture
       - file: gpp/Class_4_GPP
       - file: gpp/Class_4_GPP_Solutions
   - file: class/Class5

@@ -28,3 +28,7 @@ ul.bd-sidenav:not(.bd-sidenav__home-link) li.toctree-l2 > a::before {
 ul.bd-sidenav:not(.bd-sidenav__home-link) li.toctree-l2 > a[href$="_Solutions.html"]::before {
   content: "✅ ";
 }
+
+ul.bd-sidenav:not(.bd-sidenav__home-link) li.toctree-l2 > a[href$="_Lecture.html"]::before {
+  content: "🎤 ";
+}

@@ -15,12 +15,15 @@ what happens.
 ## How this book is organized
 
 The sidebar walks through the course roughly in the order you'll hit it in
-class. Each class has up to three pages, nested together and marked with
+class. Each class has up to four pages, nested together and marked with
 different icons so they're easy to tell apart at a glance:
 
 - **📖 The reading** (e.g. *Class 4: Coding Basics Wrap-up and Selection
   Statements*) — the in-class material, with runnable examples.
-- **📝 The GPP**, indented underneath it (e.g. *Class 4 GPP*) — that day's
+- **🎤 The Lecture**, indented underneath it (e.g. *Class 4 Lecture*) — a
+  shorter, live-coding companion that walks through the reading's key
+  examples and ties them directly to that day's GPP.
+- **📝 The GPP**, indented alongside it (e.g. *Class 4 GPP*) — that day's
   Group Practice Problems. Some GPPs are notebooks you work through cell
   by cell; a few are meant to be downloaded and run as a standalone script
   in PyCharm or VS Code once the course moves off Colab — those pages say
@@ -29,7 +32,8 @@ different icons so they're easy to tell apart at a glance:
   answers, for checking your work after you've given the problems a real
   attempt.
 
-Not every class has all three pages (some classes don't have a GPP, and a
+Not every class has all four pages (most don't have a Lecture page yet,
+some classes don't have a GPP, and a
 couple of GPPs are just links out to an external MathWorks tutorial with
 its own built-in answer key, so there's no separate solutions page for
 those), but the numbering is consistent throughout: Class 1 through
