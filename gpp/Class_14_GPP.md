@@ -1,4 +1,4 @@
-# Class 14 GPP: Scope, Argument Passing, and Copying
+# Class 14 GPP: Scripts, Comments, and Documentation
 
 This is a script-based exercise: work through the problems directly in the
 `.py` file below in PyCharm/VS Code (not in a notebook). Download it, open
