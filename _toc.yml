@@ -2,6 +2,7 @@ format: jb-book
 root: intro
 chapters:
   - file: class/Class1
+  - file: gpp/Class_1_GPP
   - file: class/Class2
   - file: gpp/Class_2_GPP
   - file: class/Class3
