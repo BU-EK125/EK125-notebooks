@@ -1,4 +1,4 @@
-# Class 21: GPP
+# Class 21 GPP: User Functions and Modular Programming in MATLAB
 
 ## Setup Instructions
 
