@@ -4,45 +4,73 @@ chapters:
   - file: class/Class1
     sections:
       - file: gpp/Class_1_GPP
+        sections:
+          - file: gpp/Class_1_GPP_Solutions
   - file: class/Class2
     sections:
       - file: gpp/Class_2_GPP
+        sections:
+          - file: gpp/Class_2_GPP_Solutions
   - file: class/Class3
     sections:
       - file: gpp/Class_3_GPP
+        sections:
+          - file: gpp/Class_3_GPP_Solutions
   - file: class/Class4
     sections:
       - file: gpp/Class_4_GPP
+        sections:
+          - file: gpp/Class_4_GPP_Solutions
   - file: class/Class5
     sections:
       - file: gpp/Class_5_GPP
+        sections:
+          - file: gpp/Class_5_GPP_Solutions
   - file: class/Class6
     sections:
       - file: gpp/Class_6_GPP
+        sections:
+          - file: gpp/Class_6_GPP_Solutions
   - file: class/Class7
     sections:
       - file: gpp/Class_7_GPP
+        sections:
+          - file: gpp/Class_7_GPP_Solutions
   - file: class/Class9
     sections:
       - file: gpp/Class_9_GPP
+        sections:
+          - file: gpp/Class_9_GPP_Solutions
   - file: class/Class10
     sections:
       - file: gpp/Class_10_GPP
+        sections:
+          - file: gpp/Class_10_GPP_Solutions
   - file: class/Class11
     sections:
       - file: gpp/Class_11_GPP
+        sections:
+          - file: gpp/Class_11_GPP_Solutions
   - file: class/Class12
     sections:
       - file: gpp/Class_12_GPP
+        sections:
+          - file: gpp/Class_12_GPP_Solutions
   - file: class/Class13
     sections:
       - file: gpp/Class_13_GPP
+        sections:
+          - file: gpp/Class_13_GPP_Solutions
   - file: class/Class14
     sections:
       - file: gpp/Class_14_GPP
+        sections:
+          - file: gpp/Class_14_GPP_Solutions
   - file: class/Class15
     sections:
       - file: gpp/Class_15_GPP
+        sections:
+          - file: gpp/Class_15_GPP_Solutions
   - file: class/Class16
     sections:
       - file: gpp/Class_16_GPP
@@ -55,9 +83,15 @@ chapters:
   - file: class/Class20
     sections:
       - file: gpp/Class_20_GPP
+        sections:
+          - file: gpp/Class_20_GPP_Solutions
   - file: class/Class21
     sections:
       - file: gpp/Class_21_GPP
+        sections:
+          - file: gpp/Class_21_GPP_Solutions
   - file: class/Class22
     sections:
       - file: gpp/Class_22_GPP
+        sections:
+          - file: gpp/Class_22_GPP_Solutions

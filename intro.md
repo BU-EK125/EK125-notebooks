@@ -25,11 +25,15 @@ different icons so they're easy to tell apart at a glance:
   by cell; a few are meant to be downloaded and run as a standalone script
   in PyCharm or VS Code once the course moves off Colab — those pages say
   so explicitly and give you a direct download link.
+- **✅ The GPP Solutions**, indented one level further under the GPP —
+  the worked answers, for checking your work after you've given the
+  problems a real attempt.
 
-Not every class has both pages (some classes don't have a GPP, and a
-couple of GPPs are just links out to an external MathWorks tutorial), but
-the numbering is consistent throughout: Class 1 through Class 22, aside
-from a couple of numbers the course doesn't use.
+Not every class has all three pages (some classes don't have a GPP, and a
+couple of GPPs are just links out to an external MathWorks tutorial with
+its own built-in answer key, so there's no separate solutions page for
+those), but the numbering is consistent throughout: Class 1 through
+Class 22, aside from a couple of numbers the course doesn't use.
 
 ## What you'll actually learn
 

@@ -18,3 +18,14 @@ ul.bd-sidenav.current li.toctree-l2 > a::before {
   content: "📝 ";
   font-style: normal;
 }
+
+/* GPP Solutions nest one level under their GPP (toctree-l3). */
+ul.bd-sidenav.current li.toctree-l3 > a {
+  font-style: italic;
+  color: var(--pst-color-secondary);
+}
+
+ul.bd-sidenav.current li.toctree-l3 > a::before {
+  content: "✅ ";
+  font-style: normal;
+}
