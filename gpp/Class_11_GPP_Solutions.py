@@ -1,4 +1,4 @@
-# Week 6B Morning Assignment: Working with arrays in NumPy
+# Class 11: Working with arrays in NumPy
 # Group Exercise (Teams of 3)
 # Work together to complete the following tasks!
 

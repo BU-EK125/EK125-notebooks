@@ -4,7 +4,7 @@ EK125 Group Practice Problems - Class 9
 Getting Comfortable with PyCharm
 
 NOTE: Each problem below would normally be its own .py file. They are combined
-here into one file for instructor reference only.
+here into one file for easier reference.
 ================================================================================
 """
 

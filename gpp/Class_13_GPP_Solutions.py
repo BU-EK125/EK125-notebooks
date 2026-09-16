@@ -1,9 +1,7 @@
 """
 ================================================================================
 EK125 — Class 13: User-Defined Functions, Scope, and Copying
-INSTRUCTOR SOLUTIONS
-
-This file contains complete solutions with teaching notes.
+SOLUTIONS
 ================================================================================
 """
 
@@ -685,43 +683,3 @@ for row in identity3:
 # [1, 0, 0]
 # [0, 1, 0]
 # [0, 0, 1]
-
-
-"""
-===============================================================================
-TEACHING NOTES FOR CLASS 13
-
-TIMING:
-- Part 1 (Parameter Passing): 10 minutes - critical for understanding
-- Part 2 (Return Functions): 15 minutes - core skill
-- Part 3 (Print Functions): 10 minutes - emphasize the difference
-- Part 4 (Keyword Args): 10 minutes - very practical
-- Part 5 (Scope): 15 minutes - challenging concept
-- Part 6 (Copying): 15 minutes - common source of bugs
-- Part 7 (Lambdas): 5 minutes - quick concept
-- Part 8 (Mixed): 10 minutes - integration
-- Part 9 (Combined): 15 minutes - everything together
-- Part 10 (Challenges): If time permits
-
-COMMON STUDENT MISTAKES:
-1. Confusing when original list is modified vs when it isn't
-2. Trying to use global variables instead of parameters/returns
-3. Forgetting to return a value from a function
-4. Using shallow copy when deep copy is needed
-5. Thinking reassignment modifies the original variable
-
-WHAT TO EMPHASIZE:
-- Functions should do ONE thing well
-- Parameter passing behavior differs for mutable vs immutable
-- Reassignment ALWAYS creates a new local variable
-- Use .copy() or copy.deepcopy() to protect original data
-- LEGB rule for variable lookup
-- Good function design improves code organization
-
-ASSESSMENT IDEAS:
-- Quiz: Predict output of functions with different parameter types
-- Exam: Write a function that uses keyword arguments and copying
-- Common exam question: Fix broken code with scope errors
-
-===============================================================================
-"""
