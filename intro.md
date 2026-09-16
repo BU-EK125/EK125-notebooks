@@ -15,7 +15,7 @@ what happens.
 ## How this book is organized
 
 The sidebar walks through the course roughly in the order you'll hit it in
-class. Each class has up to two pages, nested together and marked with
+class. Each class has up to three pages, nested together and marked with
 different icons so they're easy to tell apart at a glance:
 
 - **📖 The reading** (e.g. *Class 4: Coding Basics Wrap-up and Selection
@@ -25,9 +25,9 @@ different icons so they're easy to tell apart at a glance:
   by cell; a few are meant to be downloaded and run as a standalone script
   in PyCharm or VS Code once the course moves off Colab — those pages say
   so explicitly and give you a direct download link.
-- **✅ The GPP Solutions**, indented one level further under the GPP —
-  the worked answers, for checking your work after you've given the
-  problems a real attempt.
+- **✅ The GPP Solutions**, indented alongside the GPP — the worked
+  answers, for checking your work after you've given the problems a real
+  attempt.
 
 Not every class has all three pages (some classes don't have a GPP, and a
 couple of GPPs are just links out to an external MathWorks tutorial with
