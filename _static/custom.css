@@ -1,31 +1,36 @@
-/* Distinguish readings from GPPs (Group Practice Problems) in the sidebar
-   nav. GPPs are nested one level under their reading in _toc.yml, so they
-   land on distinct, robust structural classes (toctree-l1 = reading,
-   toctree-l2 = GPP) rather than needing to pattern-match hrefs/filenames.
-   Scoped to ul.bd-sidenav.current (the actual chapter list) rather than
-   the bare .bd-sidenav class, which also matches the separate "Welcome to
-   EK125" home-link container -- that one shouldn't get a reading icon. */
-ul.bd-sidenav.current li.toctree-l1 > a::before {
+/* Distinguish readings, GPPs (Group Practice Problems), and GPP solutions
+   in the sidebar nav. GPPs nest one level under their reading, and
+   solutions nest one level under their GPP, in _toc.yml, so they land on
+   distinct, robust structural classes (toctree-l1 = reading,
+   toctree-l2 = GPP, toctree-l3 = solutions) rather than needing to
+   pattern-match hrefs/filenames.
+   Scoped to ul.bd-sidenav:not(.bd-sidenav__home-link) -- the actual
+   chapter list -- rather than the bare .bd-sidenav class, which also
+   matches the separate "Welcome to EK125" home-link container (that one
+   shouldn't get an icon). The chapter list only gets a "current" class
+   modifier on subpages, not on the intro/root page, so we can't rely on
+   .current to distinguish it. */
+ul.bd-sidenav:not(.bd-sidenav__home-link) li.toctree-l1 > a::before {
   content: "📖 ";
 }
 
-ul.bd-sidenav.current li.toctree-l2 > a {
+ul.bd-sidenav:not(.bd-sidenav__home-link) li.toctree-l2 > a {
   font-style: italic;
   color: var(--pst-color-secondary);
 }
 
-ul.bd-sidenav.current li.toctree-l2 > a::before {
+ul.bd-sidenav:not(.bd-sidenav__home-link) li.toctree-l2 > a::before {
   content: "📝 ";
   font-style: normal;
 }
 
 /* GPP Solutions nest one level under their GPP (toctree-l3). */
-ul.bd-sidenav.current li.toctree-l3 > a {
+ul.bd-sidenav:not(.bd-sidenav__home-link) li.toctree-l3 > a {
   font-style: italic;
   color: var(--pst-color-secondary);
 }
 
-ul.bd-sidenav.current li.toctree-l3 > a::before {
+ul.bd-sidenav:not(.bd-sidenav__home-link) li.toctree-l3 > a::before {
   content: "✅ ";
   font-style: normal;
 }
