@@ -1,7 +1,7 @@
 """
 Class 10: Mastering Slicing in Python - Group Practice Problems
 EK125 - Spring 2026
-SOLUTION KEY (INSTRUCTOR USE ONLY)
+SOLUTION KEY
 """
 
 # ==============================================================================

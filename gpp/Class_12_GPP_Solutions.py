@@ -1,9 +1,9 @@
 """
 ================================================================================
-EK125 — Week 7A Morning Assignment: Python Dictionaries
+EK125 — Class 12: Python Dictionaries
 Group Exercise (Teams of 3)
 
-** INSTRUCTOR SOLUTIONS — DO NOT DISTRIBUTE TO STUDENTS **
+SOLUTIONS
 ================================================================================
 """
 

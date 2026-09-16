@@ -3,14 +3,6 @@
 EK125 — Class 14: Scripts, Comments, and Documentation
 Group Practice Problems - SOLUTIONS
 Spring 2026
-
-INSTRUCTOR NOTES:
-- Second day with VS Code - students should be more comfortable
-- Focus today is on PROFESSIONAL CODE PRACTICES
-- Emphasize quality over quantity
-- This is setting habits for the rest of the semester
-- Walk around and check documentation quality, not just correctness
-- Estimated time: 55 minutes
 ================================================================================
 """
 
