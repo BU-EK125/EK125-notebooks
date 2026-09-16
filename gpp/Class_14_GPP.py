@@ -1,6 +1,6 @@
 """
 ================================================================================
-EK125 — Class 14: Scope, Argument Passing, and Copying
+EK125 — Class 14: Scripts, Comments, and Documentation
 Group Practice Problems (Teams of 3)
 Spring 2026
 
@@ -13,315 +13,49 @@ Instructions:
 - Work in groups of THREE
 - You MAY use references (readings, slides, internet)
 - Do NOT use AI to write code - you need to learn yourself!
+- Focus on PROFESSIONAL CODE today - documentation matters!
 - Save frequently (Ctrl+S / Cmd+S)
-- Test your code as you go!
-
-IMPORTANT: This is our first day using VS Code!
-- Remember to save your file before running
-- Run your code using the Run button or F5
-- Check the terminal at the bottom for output
 ================================================================================
 """
 
 # ==============================================================================
-# PROBLEM 1: Understanding Local Scope
+# PROBLEM 1: Good Comments vs. Bad Comments
 # ==============================================================================
 """
-What will this code print? Predict first, then run it.
-Explain why it produces this output.
+Below are examples of comments. Identify which are GOOD and which are BAD.
+Then rewrite the bad ones to be better.
+
+Remember: Good comments explain WHY, not WHAT. They clarify non-obvious logic.
 """
 
-def test_scope():
-    x = 10
-    print(f"Inside function: x = {x}")
-
-x = 5
-print(f"Before function: x = {x}")
-test_scope()
-print(f"After function: x = {x}")
-
-# Your prediction:
+# Example 1:
+x = x + 1  # Add 1 to x
+# Is this a good or bad comment?
 # 
 
 
-
-
-# Explanation of what happened:
+# Example 2:
+# Apply 20% curve because this exam was particularly challenging
+final_grade = raw_score * 1.20
+# Is this a good or bad comment?
 # 
 
 
-
-
-print("\n" + "="*60 + "\n")
-
-
-# ==============================================================================
-# PROBLEM 2: Modifying Lists (Mutable Arguments)
-# ==============================================================================
-"""
-Predict what will happen when we run this code.
-Then modify the function to NOT change the original list.
-"""
-
-def add_item(my_list, item):
-    """Add an item to the list."""
-    my_list.append(item)
-    return my_list
-
-# Test it
-original = [1, 2, 3]
-print(f"Original list: {original}")
-result = add_item(original, 4)
-print(f"Returned list: {result}")
-print(f"Original after function: {original}")
-
-# Why did the original list change?
+# Example 3:
+total = sum(numbers)  # Calculate the total of all numbers
+# Is this a good or bad comment?
 # 
 
 
-
-# Fixed version that doesn't modify original:
-def add_item_safe(my_list, item):
-    """Add an item to a COPY of the list."""
-    # Your code here:
-    
-    
-    
-
-
-# Test fixed version
-original2 = [1, 2, 3]
-print(f"\nOriginal list: {original2}")
-result2 = add_item_safe(original2, 4)
-print(f"Returned list: {result2}")
-print(f"Original after function: {original2}")
-
-print("\n" + "="*60 + "\n")
-
-
-# ==============================================================================
-# PROBLEM 3: Shallow vs Deep Copy
-# ==============================================================================
-"""
-Create a nested list and demonstrate the difference between
-shallow copy and deep copy.
-
-You'll need to import the copy module!
-"""
-
-import copy
-
-# Original nested list
-matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-
-# TODO: Create a shallow copy
-
-
-
-
-# TODO: Create a deep copy
-
-
-
-
-# TODO: Modify the original (change the first element to 999)
-
-
-
-
-# TODO: Print all three and observe what changed
-print("Original matrix:", )
-print("Shallow copy:", )
-print("Deep copy:", )
-
-# Explanation - what's the difference?
+# Example 4:
+# Convert temperature to Celsius for consistency with weather API
+temp_c = (temp_f - 32) * 5/9
+# Is this a good or bad comment?
 # 
 
 
-
-
-print("\n" + "="*60 + "\n")
-
-
-# ==============================================================================
-# PROBLEM 4: Avoiding Global Variables
-# ==============================================================================
-"""
-This code uses a global variable (BAD PRACTICE!).
-Rewrite it to use function parameters instead.
-
-CRITICAL: We NEVER use global variables in this course - zero credit if you do!
-"""
-
-# Bad code with global variable:
-total = 0  # Global variable - BAD!
-
-def add_bad(x):
-    """Bad function that uses global variable."""
-    global total  # Using global - BAD!
-    total += x
-    return total
-
-# TODO: Write a better version without global variables
-# HINT: Pass the current total as a parameter and return the new total
-
-
-
-
-# Test your good version:
-my_total = 0
-my_total = # call your function to add 5
-my_total = # call your function to add 3
-my_total = # call your function to add 7
-print(f"Total: {my_total}")
-
-print("\n" + "="*60 + "\n")
-
-
-# ==============================================================================
-# PROBLEM 5: Multiple Return Values and Scope
-# ==============================================================================
-"""
-Write a function that takes a list of numbers and returns THREE values:
-- The minimum value
-- The maximum value  
-- The average
-
-Do NOT use the built-in min(), max(), or sum() functions.
-Write your own logic using loops!
-
-Test with: [23, 5, 67, 12, 89, 34, 56, 8]
-"""
-
-def analyze_list(numbers):
-    """
-    Analyze a list of numbers.
-    
-    Parameters:
-        numbers (list): List of numbers to analyze
-    
-    Returns:
-        tuple: (minimum, maximum, average)
-    """
-    # Your code here:
-    
-    
-    
-    
-    
-    
-
-
-# Test your function
-test_nums = [23, 5, 67, 12, 89, 34, 56, 8]
-min_val, max_val, avg_val = analyze_list(test_nums)
-print(f"Numbers: {test_nums}")
-print(f"Minimum: {min_val}")
-print(f"Maximum: {max_val}")
-print(f"Average: {avg_val:.2f}")
-
-print("\n" + "="*60 + "\n")
-
-
-# ==============================================================================
-# PROBLEM 6: Student Grade Tracker
-# ==============================================================================
-"""
-Create a grade tracking system that demonstrates proper use of copying.
-
-Write two functions:
-
-1. calculate_curved_grades(grades, curve_percent)
-   - Takes a list of grades and a curve percentage (e.g., 5 for 5%)
-   - Returns a NEW list with curved grades
-   - Does NOT modify the original list
-   - Cap grades at 100
-
-2. drop_lowest_grade(grades)
-   - Takes a list of grades
-   - Returns a NEW list with the lowest grade removed
-   - Does NOT modify the original list
-
-Test both functions and verify the original list is unchanged!
-"""
-
-def calculate_curved_grades(grades, curve_percent):
-    """
-    Apply a curve to grades without modifying the original list.
-    
-    Parameters:
-        grades (list): List of grade values
-        curve_percent (float): Percentage to add (e.g., 5 for 5%)
-    
-    Returns:
-        list: New list with curved grades (capped at 100)
-    """
-    # Your code here:
-    
-    
-    
-    
-
-
-def drop_lowest_grade(grades):
-    """
-    Remove the lowest grade without modifying the original list.
-    
-    Parameters:
-        grades (list): List of grade values
-    
-    Returns:
-        list: New list with lowest grade removed
-    """
-    # Your code here:
-    
-    
-    
-    
-
-
-# Test your functions
-original_grades = [78, 85, 92, 68, 88, 95]
-print(f"Original grades: {original_grades}")
-
-curved = calculate_curved_grades(original_grades, 5)
-print(f"Curved grades: {curved}")
-print(f"Original after curving: {original_grades}")
-
-dropped = drop_lowest_grade(original_grades)
-print(f"After dropping lowest: {dropped}")
-print(f"Original after dropping: {original_grades}")
-
-print("\n" + "="*60 + "\n")
-
-
-# ==============================================================================
-# PROBLEM 7: Nested Scope Challenge
-# ==============================================================================
-"""
-Trace through this code carefully. Predict what it will print,
-then run it to verify.
-
-This demonstrates nested function scope!
-"""
-
-def outer():
-    x = "outer"
-    
-    def inner():
-        x = "inner"
-        print(f"In inner: {x}")
-    
-    inner()
-    print(f"In outer: {x}")
-
-x = "global"
-print(f"Global: {x}")
-outer()
-print(f"After outer: {x}")
-
-# Trace through and explain the output:
-# 
+# TODO: Find one line of code in your previous homework and write
+# a GOOD comment for it (explain WHY, not WHAT)
 
 
 
@@ -330,46 +64,80 @@ print("\n" + "="*60 + "\n")
 
 
 # ==============================================================================
-# PROBLEM 8: Deep Copy with Dictionaries (Challenge)
+# PROBLEM 2: Adding Docstrings to Functions
 # ==============================================================================
 """
-You're managing student data where each student is represented as a dictionary
-with a list of quiz scores.
-
-Demonstrate the difference between shallow and deep copy with this structure!
+Below is a function with NO documentation. Add a proper docstring that includes:
+- Brief description of what the function does
+- Parameters (with types and descriptions)
+- Return value (with type and description)
+- An example of usage
 """
 
-import copy
+def calculate_final_grade(homework, quizzes, exams):
+    hw_avg = sum(homework) / len(homework)
+    quiz_avg = sum(quizzes) / len(quizzes)
+    exam_avg = sum(exams) / len(exams)
+    
+    final = hw_avg * 0.27 + quiz_avg * 0.20 + exam_avg * 0.30 + 18
+    
+    return final
 
-# Original data
-students = [
-    {'name': 'Alice', 'scores': [85, 90, 88]},
-    {'name': 'Bob', 'scores': [78, 82, 80]},
-    {'name': 'Charlie', 'scores': [92, 88, 95]}
-]
-
-# TODO: Create a shallow copy
-
-
-
-
-# TODO: Create a deep copy
+# TODO: Rewrite the function above with a proper docstring
 
 
 
 
-# TODO: Modify Alice's first score in the original to 100
+# Test your documented function:
+hw = [85, 90, 88, 92]
+quiz = [78, 82, 85, 80, 88]
+exam = [82, 88, 85]
+
+grade = calculate_final_grade(hw, quiz, exam)
+print(f"Final grade: {grade:.1f}")
+
+print("\n" + "="*60 + "\n")
+
+
+# ==============================================================================
+# PROBLEM 3: Script Organization
+# ==============================================================================
+"""
+Below is messy code. Reorganize it properly using these principles:
+
+1. Module docstring at the top
+2. Imports next
+3. Constants (if any)
+4. Function definitions (with docstrings!)
+5. Main program code
+6. Use if __name__ == "__main__": pattern
+
+Messy code to fix:
+"""
+
+def calculate_bmi(weight, height):
+    return weight / (height ** 2)
+
+import math
+
+result = calculate_bmi(70, 1.75)
+print(f"BMI: {result:.1f}")
+
+PI = 3.14159
+
+def circle_area(radius):
+    return PI * radius ** 2
+
+area = circle_area(5)
+print(f"Area: {area:.2f}")
+
+# TODO: Rewrite all the above code in proper order below:
+"""
+Module docstring goes here
+"""
 
 
 
-
-# TODO: Print all three versions
-print("Original:", students)
-print("Shallow:", )
-print("Deep:", )
-
-# Explanation - what happened and why?
-# 
 
 
 
@@ -378,10 +146,193 @@ print("\n" + "="*60 + "\n")
 
 
 # ==============================================================================
-# If you finish early, create your own problem!
+# PROBLEM 4: Professional Temperature Converter
 # ==============================================================================
 """
-Design a problem about scope or copying and challenge another group!
+Create a COMPLETE, professionally documented temperature conversion script.
 
-Your problem:
+Requirements:
+1. Module docstring at top explaining what the script does
+2. Three functions (each with proper docstrings):
+   - celsius_to_fahrenheit(celsius)
+   - fahrenheit_to_celsius(fahrenheit)
+   - kelvin_to_celsius(kelvin)
+3. Each function should:
+   - Have a clear, descriptive docstring
+   - Include parameter and return descriptions
+   - Have an example in the docstring
+4. Use the if __name__ == "__main__": pattern
+5. Include helpful (not obvious) comments where needed
+
+Create your complete solution below:
 """
+
+# Your complete solution:
+
+
+
+
+
+
+
+
+
+
+print("\n" + "="*60 + "\n")
+
+
+# ==============================================================================
+# PROBLEM 5: Code Review - Fix the Documentation
+# ==============================================================================
+"""
+This function has TERRIBLE documentation. Your job:
+1. Add a proper docstring
+2. Rename variables to be more descriptive
+3. Add helpful comments (not obvious ones!)
+4. Make it professional!
+"""
+
+def calc(a, b):
+    c = []
+    for i in a:
+        if i > b:
+            c.append(i)
+    return c
+
+# TODO: Rewrite with proper documentation and clear variable names
+
+
+
+
+# Test your improved function:
+numbers = [23, 45, 12, 67, 34, 89, 15, 56]
+threshold = 40
+result = # call your function
+print(f"Numbers above {threshold}: {result}")
+
+print("\n" + "="*60 + "\n")
+
+
+# ==============================================================================
+# PROBLEM 6: Creating a Module with if __name__ == "__main__"
+# ==============================================================================
+"""
+Create a GPA calculator module that can be both:
+1. Imported and used by other programs
+2. Run directly as a script
+
+Your module should include:
+- Module docstring
+- calculate_gpa(grades, credits) function with proper docstring
+- letter_grade(gpa) function with proper docstring
+- main() function that demonstrates usage
+- if __name__ == "__main__": pattern
+
+GPA Calculation: sum(grade * credit) / sum(credits)
+
+Letter grades:
+A: 3.7-4.0, B: 2.7-3.69, C: 1.7-2.69, D: 1.0-1.69, F: <1.0
+"""
+
+# Your complete module:
+
+
+
+
+
+
+
+
+
+
+print("\n" + "="*60 + "\n")
+
+
+# ==============================================================================
+# PROBLEM 7: Documentation Best Practices
+# ==============================================================================
+"""
+Write a function called analyze_sensor_data that:
+- Takes a list of temperature readings (floats)
+- Returns: count, average, min, max, and readings above 75°F
+
+This function must demonstrate ALL of these documentation best practices:
+1. Module-level docstring (at the very top of this section)
+2. Function docstring with Parameters and Returns sections
+3. Example usage in the docstring
+4. Helpful comments explaining WHY, not WHAT
+5. Clear variable names
+6. Proper formatting and structure
+"""
+
+# Your complete solution with exemplary documentation:
+
+
+
+
+
+
+
+
+
+
+print("\n" + "="*60 + "\n")
+
+
+# ==============================================================================
+# PROBLEM 8: Understanding the if __name__ == "__main__" Pattern
+# ==============================================================================
+"""
+Explain in your own words:
+
+1. What does if __name__ == "__main__": mean?
+
+
+
+2. When does Python set __name__ to "__main__"?
+
+
+
+3. Why is this pattern useful?
+
+
+
+4. What happens if you DON'T use this pattern?
+
+
+
+Now write a simple example that demonstrates this pattern:
+"""
+
+# Your example code:
+
+
+
+
+
+
+
+
+
+
+# ==============================================================================
+# BONUS CHALLENGE: Professional Statistics Module
+# ==============================================================================
+"""
+If you finish early, create a complete statistics module!
+
+Requirements:
+- Module docstring explaining the purpose
+- At least 4 functions: mean, median, mode, standard_deviation
+- Each function with complete docstrings
+- Proper imports at the top
+- Constants if needed
+- Helper functions if useful
+- main() function showing examples
+- if __name__ == "__main__": pattern
+- Professional comments throughout
+
+This should be production-quality code!
+"""
+
+# Your complete statistics module:

@@ -54,9 +54,6 @@ chapters:
       - file: gpp/Class_14_GPP
       - file: gpp/Class_14_GPP_Solutions
   - file: class/Class15
-    sections:
-      - file: gpp/Class_15_GPP
-      - file: gpp/Class_15_GPP_Solutions
   - file: class/Class16
     sections:
       - file: gpp/Class_16_GPP
