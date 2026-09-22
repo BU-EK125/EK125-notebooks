@@ -41,22 +41,25 @@ Class 22, aside from a couple of numbers the course doesn't use.
 
 ## What you'll actually learn
 
-The course has two acts.
+The course has three acts.
 
-**Act 1 is Python**, and it builds in the order you'd expect: variables
-and types, then strings and lists, booleans and conditionals, loops
-(plain and nested), and by around Class 9 you'll graduate from Colab to
-running Python locally in PyCharm. From there it's slicing and NumPy
-arrays, dictionaries, writing your own functions, and finally file I/O
-and data visualization — the tools you need to actually *do* something
+**Act 1 is Python in Colab**: variables and types, then strings and
+lists, booleans and conditionals, and loops (plain and nested) — all
+in the browser, no local setup required.
+
+**Act 2 is Python in an IDE.** Around Class 9 you'll graduate from
+Colab to running Python locally in PyCharm (see the course lectures
+for that transition). From there it's slicing and NumPy arrays,
+dictionaries, writing your own functions, and finally file I/O and
+data visualization — the tools you need to actually *do* something
 with data, not just print it.
 
-**Act 2 is MATLAB.** Class 16 is the bridge: a Python-to-MATLAB Rosetta
-Stone covering syntax differences and plotting. From there the course
-covers vectors and matrices, scripts and documentation, user-defined
-functions, and a tour of MATLAB's toolboxes — the same engineering
-problem-solving skills from Act 1, in the language you'll actually meet
-in most other engineering courses.
+**Act 3 is MATLAB.** Class 16 is the bridge: a Python-to-MATLAB
+Rosetta Stone covering syntax differences and plotting. From there
+the course covers vectors and matrices, scripts and documentation,
+user-defined functions, and a tour of MATLAB's toolboxes — the same
+engineering problem-solving skills from Acts 1 and 2, in the language
+you'll actually meet in most other engineering courses.
 
 ## A tip
 
