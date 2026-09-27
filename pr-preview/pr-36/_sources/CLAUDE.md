@@ -58,13 +58,18 @@ one point -- as of this writing that's resolved; all five execute cleanly.
 If you find execution errors in this repo's `gpp/*_Solutions.ipynb` files
 again, it may be a regression worth flagging.)
 
-## Upstream source: EK125WIP
+## Upstream source: EK125-Instructors
 
-`EK125WIP` (`briandepasquale/EK125WIP`, personal, not under the BU-EK125
-org) is the actual raw-material repo one level further upstream. GPP
+`EK125-Instructors` (private, org-owned) is the actual raw-material repo
+one level further upstream. **This repo was transferred from a personal
+repo (`briandepasquale/EK125WIP`) into the org and renamed** -- same
+repo/history, formerly "EK125WIP" in older notes/transcripts; a local
+checkout's remote may still point at the old `briandepasquale/
+EK125WIP.git` URL (redirects still work, but repoint to
+`https://github.com/BU-EK125/EK125-Instructors.git` when convenient). GPP
 solutions here were minted from files there. It's organized by semester
 (`S26`, `F25`, `F26`, `copyOfShared`) rather than by class at the top
-level -- see `EK125WIP`'s own `CLAUDE.md` for its structure in detail.
+level -- see its own `CLAUDE.md` for its structure in detail.
 
 ## Known open items worth checking before assuming fixed
 
